@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+	  "experimentalObjectRestSpread": true // remplacer par babel-eslint ?
+    }
+  },
+  "rules": {
+    "comma-dangle": [2, "never"],
+    "indent": [2, "tab", {
+      "SwitchCase": 1
+    }],
+    "max-len": [2, 150],
+    "semi": [2, "never"],
+    "react/jsx-indent": [2, "tab"],
+    "react/jsx-indent-props": [2, "tab"]
+  }
+}
